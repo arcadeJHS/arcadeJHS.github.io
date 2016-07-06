@@ -1,0 +1,20 @@
+---
+layout: default
+---
+
+<div class="home">
+
+  <ul class="post-list">
+    {% for post in site.posts %}
+      <li>
+        <p class="post-meta">{{ post.date | date_to_extended_it_string }}</p>
+        <div class="title-excerpt">
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+          <p>{{ post.numbers }}</p>
+          <p>{{ post.excerpt }}</p>
+        </div>
+      </li>
+    {% endfor %}
+  </ul>
+
+</div>

@@ -1,0 +1,59 @@
+.site-header {
+    border-top: 0;
+}
+
+
+/**
+ * Home page
+ */
+ .home {
+     .post-list {
+         .post-meta {
+             float: left; 
+             width: 130px; 
+             text-align: right;
+         }
+         .title-excerpt {
+             padding-left: 150px;
+             
+             p {
+                 margin-bottom: 0;
+             }
+         }
+     }
+ }
+
+
+/**
+ * Post
+ */
+.post-content {
+	img {
+        @include border-radiuses(6px, 6px, 6px, 6px);
+    }
+    
+    img.center-image {
+        display: block;
+        margin: 0 auto;    
+    }
+}
+  
+  
+/**
+ * Icons
+ */
+.icon-facebook > svg > path {
+    fill: #3A5795;
+}
+
+.icon-rss > svg > path {
+    fill: #f90;
+}
+
+.icon--github > svg > path {
+    fill: #333333;
+}
+
+.icon--twitter > svg > path {
+    fill: #55ACEE;
+}
